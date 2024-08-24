@@ -1,5 +1,4 @@
 import {
-  IsCreditCard,
   IsDateString,
   IsEmail,
   IsOptional,
@@ -7,7 +6,7 @@ import {
   Length,
 } from 'class-validator';
 
-export class CreateUserDto {
+export class RegisterDto {
   @IsString()
   @Length(3, 20)
   username: string;
